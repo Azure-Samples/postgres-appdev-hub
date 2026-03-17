@@ -26,7 +26,7 @@
     "@mdx-js/react": "^3.0.0",
     "@tsconfig/docusaurus": "^2.0.4",
     "@types/react-dom": "^18.2.17",
-    "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "@typescript-eslint/eslint-plugin": "^7.0.0",
     "@typescript-eslint/parser": "^6.21.0",
     "clsx": "^2.0.0",
     "eslint": "^8.57.1",
