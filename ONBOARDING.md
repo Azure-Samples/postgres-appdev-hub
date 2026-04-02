@@ -9,11 +9,12 @@ Welcome! This guide is written for **everyone** — from someone who just wants 
 1. [What Is This Project?](#1-what-is-this-project)
 2. [Non-Technical: Update Text & Content](#2-non-technical-update-text--content)
    - [Add or Edit a Resource Card](#21-add-or-edit-a-resource-card)
-   - [Edit Quick Links](#22-edit-quick-links)
-   - [Edit Learning Paths](#23-edit-learning-paths)
-   - [Edit the Community & Support Section](#24-edit-the-community--support-section)
-   - [Edit the Hero (Cover Page) Text](#25-edit-the-hero-cover-page-text)
-   - [Add or Update Images](#26-add-or-update-images)
+   - [Mark a Resource as Featured](#22-mark-a-resource-as-featured)
+   - [Edit Quick Links](#23-edit-quick-links)
+   - [Edit Learning Paths](#24-edit-learning-paths)
+   - [Edit the Community & Support Section](#25-edit-the-community--support-section)
+   - [Edit the Hero (Cover Page) Text](#26-edit-the-hero-cover-page-text)
+   - [Add or Update Images](#27-add-or-update-images)
 3. [Beginner Developer: Get the Site Running Locally](#3-beginner-developer-get-the-site-running-locally)
 4. [Intermediate Developer: Codebase Walkthrough](#4-intermediate-developer-codebase-walkthrough)
    - [Project Layout](#41-project-layout)
@@ -124,7 +125,49 @@ Each card is a JSON object. Here is an annotated example:
 
 ---
 
-### 2.2 Edit Quick Links
+### 2.2 Mark a Resource as Featured
+
+> **Featured resources are highlighted prominently** on the site — they appear in the featured carousel/section and receive special visual treatment to draw attention to the most important content.
+
+A resource becomes **featured** by adding the `"featured"` tag to its `tags` array in `static/templates.json`:
+
+```json
+{
+  "title": "My Important Tutorial",
+  "description": "A high-value resource worth highlighting.",
+  "website": "https://learn.microsoft.com/...",
+  "source": "https://learn.microsoft.com/...",
+  "image": "./img/my-thumbnail.png",
+  "tags": ["documentation", "tutorial", "python", "flexibleserver", "featured"],
+  "date": "2025-12-01",
+  "priority": "P0"
+}
+```
+
+**How featured resources are used:**
+
+- `src/data/users.tsx` exports a `featuredUsers` array that is filtered to **only entries tagged `"featured"`**.
+- The featured collection drives dedicated showcase areas that surface these resources above the main gallery.
+- Best practice: combine `"featured"` with `"priority": "P0"` so the resource also ranks first in the Recommended sort within the main gallery.
+
+**Guidelines for choosing featured resources:**
+
+| Criteria | Notes |
+| -------- | ----- |
+| High quality & accuracy | Content should be current, accurate, and well-produced |
+| High relevance | Should address common developer needs for PostgreSQL on Azure |
+| Breadth of audience | Prefer resources useful to a wide range of skill levels |
+| Limit quantity | Keep the featured set small (≤ 10–15) so the designation remains meaningful |
+
+**To feature a resource:** add `"featured"` to its `tags` array.
+
+**To un-feature a resource:** remove `"featured"` from its `tags` array.
+
+> The `"featured"` tag is a **special tag** — it does not appear in the filter panel alongside content-type tags, but it is a valid `TagType` key and must remain in `src/data/tags.tsx`.
+
+---
+
+### 2.3 Edit Quick Links
 
 The Quick Links tiles (top row under the hero) are configured in **`docusaurus.config.js`**, under `customFields.quickLinks`.
 
@@ -148,7 +191,7 @@ Each link looks like this:
 
 ---
 
-### 2.3 Edit Learning Paths
+### 2.4 Edit Learning Paths
 
 The three Learning Path cards (Developing Core Applications, Building Generative AI Apps, Building AI Agents) live in **`docusaurus.config.js`** under `customFields.learningPathsSection.paths`.
 
@@ -171,7 +214,7 @@ Editing these fields updates the text displayed on the Learning Path cards. The 
 
 ---
 
-### 2.4 Edit the Community & Support Section
+### 2.5 Edit the Community & Support Section
 
 Located in **`docusaurus.config.js`** under `customFields.communitySupportSection`.
 
@@ -214,7 +257,7 @@ To **remove a past event**, delete the object from the array.
 
 ---
 
-### 2.5 Edit the Hero (Cover Page) Text
+### 2.6 Edit the Hero (Cover Page) Text
 
 The large hero section at the top of the page is rendered by **`src/components/gallery/ShowcaseCoverPage/index.tsx`**.
 
@@ -243,7 +286,7 @@ customFields: {
 
 ---
 
-### 2.6 Add or Update Images
+### 2.7 Add or Update Images
 
 1. Place your image file in `static/img/`.  
    Supported formats: `.png`, `.jpg`, `.jpeg`, `.svg`, `.webp`
@@ -667,6 +710,7 @@ export const PARENT_CHILD_MAP = {
 | ---------------------------------- | --------------------------------------------------------------- |
 | Add a new resource card            | `static/templates.json`                                         |
 | Edit an existing card's text/URL   | `static/templates.json`                                         |
+| Mark a resource as featured        | Add `"featured"` to the card's `tags` array in `static/templates.json` |
 | Add a card image                   | `static/img/`                                                   |
 | Edit Quick Links                   | `docusaurus.config.js` → `customFields.quickLinks`              |
 | Edit Learning Path cards           | `docusaurus.config.js` → `customFields.learningPathsSection`    |
