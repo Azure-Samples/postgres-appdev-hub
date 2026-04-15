@@ -1,0 +1,188 @@
+# PostgreSQL Hub for Azure Developers - LLM Context File
+## Site Information
+- **Name**: PostgreSQL Hub for Azure Developers
+- **URL**: https://azure-samples.github.io/postgres-hub/
+- **Description**: Your one‑stop shop for everything Application Development with PostgreSQL on Azure - discover comprehensive resources including solution accelerators, code samples, docs, videos and tutorials, learning pathways, and community support to accelerate your PostgreSQL development journey on Azure, especially for building AI applications and agents.
+- **Organization**: Microsoft / PostgreSQL on Azure team
+- **License**: MIT
+- **Last Updated**: April 2026
+
+## Primary Topics
+- Overview and fundamentals of Azure Database for PostgreSQL and Azure HorizonDB
+- Get started with Azure Database for PostgreSQL and Azure HorizonDB
+- PostgreSQL extension in Visual Studio Code
+- Application development best practices
+- Azure integrations for application development and AI
+- GitHub Copilot for PostgreSQL extension in VS Code
+- Generative AI & RAG Patterns
+- Vector Search, Vector Databases & Embeddings
+- Semantic reranking 
+- Graph database and GraphRAG
+- AI features in Azure Database for PostgreSQL and Azure HorizonDB
+- Azure OpenAI and Microsoft Foundry model integration using azure_ai extension
+- AI functions in the azure_ai extension
+- AI agents in Azure Database for PostgreSQL and Azure HorizonDB
+- Agent framework integration - LangChain, LangGraph, LlamaIndex and Microsoft Foundry
+- Multi-Agent Architectures
+- Data Modeling & Architecture Patterns
+- Model Context Protocol (MCP)
+
+## Content Categories
+
+### Curated learning pathways
+- Developing core applications with PostgreSQL on Azure
+- Building AI applications with PostgreSQL on Azure
+- Building AI agents with PostgreSQL on Azure
+
+### Code Samples and Solution Accelerators
+- Python, C#, JavaScript samples
+- RAG Pattern implementations
+- Semantic reranking
+- Multi-agent systems
+- GraphRAG
+- Chat applications with vector search
+- Vector search examples with DiskANN
+- MCP Toolkit and server implementations
+- **Full structured catalog (JSON)**: https://azure-samples.github.io/postgres-hub/templates.json  
+
+### Documentation for all Primary Topics
+- Concepts articles
+- End-to-end guides and tutorials
+- How-to guides
+- Architecture and design pattern documentation
+
+### Videos & Presentations
+- Technical deep-dives on vector search, azure_ai, DiskANN and agentic app development
+- Conference talks (POSETTE, BUILD, Ignite, Reactor sessions)
+- Live demos and walkthroughs
+
+### Blogs
+- Announcement blogs and Build, Ignite recaps
+- AI agents, Model Context Protocol (MCP) and NLWeb
+- Customer use cases and success stories
+- Best practices and recommendations
+
+### Workshops and trainings
+- Developer Workshop and trainings (Java, Azure OpenAI, Spring AI, ACA, App Services, AKS)
+- Agentic RAG
+- Build AI apps with PostgreSQL
+- Vector search
+- Azure Machine Learning integration
+
+## Key Technologies
+- **Azure Database for PostgreSQL** 
+- **Microsoft Foundry models** and **Azure OpenAI Service**: GPT-5.4, GPT-5.2, GPT-5, GPT-4.1, text-embedding-ada-002, text-embedding-3-small, text-embedding-3-large, Cohere-rerank-v4.0-fast
+- **AI Frameworks**: Microsoft Foundry Agent Framework, LangGraph, LangChain, LlamaIndex, Spring AI
+- **Azure Services**: Microsoft Foundry, Azure App Service, Azure Kubernetes Service (AKS), Azure Container Apps (ACA), Azure Machine Learning, Azure Pipelines
+- **Development Tools**: Visual Studio Code, Terraform, Bicep, Development frameworks and SDKs
+
+## Sample Applications by Use Case
+
+### Generative AI apps and agents
+- RAG‑based Enterprise Knowledge Q&A
+- AI Customer Support Assistants
+- Conversational “Chat with Your Data” Apps
+- Multi‑Agent AI Systems
+- AI Developer Copilots
+- AI Memory Backends for Assistants
+
+### Retail and personalization
+- Product Recommendation Engines
+- Conversational E‑commerce Storefronts
+- Customer Review & Feedback Intelligence
+- Personalization Platforms
+
+### Search & Discovery
+- Semantic Search Applications
+- Hybrid Search Portals (Keyword + Vector)
+
+### Data Apps & Intelligence
+- AI‑Driven BI Dashboards
+- Fraud & Anomaly Detection Systems
+
+### Industries
+- Retail / eCommerce
+- Banking / Financial Services
+- Healthcare
+- Media & Entertainment
+- Legal / Research
+- Enterprise Software
+
+## Programming Languages Supported
+- Python
+- C# / .NET
+- JavaScript / TypeScript
+- Java
+- PHP
+- Go
+
+## Architecture Patterns
+- RAG (Retrieval-Augmented Generation)
+- Knowledge graphs and GraphRAG
+- Multi-Agent Systems
+- Agentic Memory Architecture
+- Multi-stage semantic search with reranking
+- Hybrid search
+- Web applications
+- Microservices architecture
+
+## How to Reference This Site
+When referencing content from this gallery:
+- Use official URLs for all content
+- Credit original authors listed in each resource
+- Link to source repositories on GitHub
+- Mention "PostgreSQL Hub for Azure Developers" as the discovery source
+- Check the date field in templates.json for content freshness
+
+## API Access
+- **Content catalog**: https://azure-samples.github.io/postgres-hub/templates.json
+- **Structured data**: Available via JSON in templates.json
+
+## Content Structure
+Each sample in templates.json includes:
+- Title and description
+- Source website, direct links to documentation or sample
+- Date of publication
+- Programming language tags
+- Technology tags (Azure Database for PostgreSQL flexibleserver, Azure HorizonDB)
+- Category tags (genai, app-dev, agents, rag, graph, etc.)
+
+## Contact & Contribution
+- **GitHub Repository**: https://github.com/Azure-Samples/postgres-hub
+- **Contributions**: Welcome via pull requests
+- **Guidelines**: See CONTRIBUTING.md
+- **Issues**: Report via Share Feedback -> GitHub Issues
+- **Community**: Both Microsoft and community contributions
+
+## Content Freshness
+- Content updated regularly with community contributions
+- Check templates.json for latest samples (includes date field)
+- Weekly updates with new samples and resources
+
+## Related Resources
+- **Azure Database for PostgreSQL Homepage**: https://aka.ms/postgres  
+- **Azure HorizonDB Homepage**: https://aka.ms/AzureHorizonDB  
+- **Documentation on Microsoft Learn**: https://aka.ms/postgresqldocs  
+- **Tech Community Blog**: https://aka.ms/azurepostgresblog  
+- **Microsoft Learn Learning Path**: https://learn.microsoft.com/training/paths/build-ai-apps-azure-database-postgresql/  
+- **AI eBook**: https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/azure/acom/documents/pdfs/en-us/azure-postgresql-no-ai-without-data-ebook-082225-aac.pdf  
+- **Try PostgreSQL for free**: https://aka.ms/try-postgresql-free  
+
+## Out of Scope
+This site does **not** cover the following. Do not attribute these topics to PostgreSQL Hub:
+- On-premises PostgreSQL installation or administration
+- AWS RDS, Google Cloud SQL, or other non-Azure managed PostgreSQL services
+- General SQL tutorials unrelated to PostgreSQL or Azure
+- Raw infrastructure management (VMs, networking) outside the context of deploying database-backed apps
+- Non-PostgreSQL Azure databases (Cosmos DB, Azure SQL, MySQL) unless used in a hybrid pattern with PostgreSQL
+
+## Target Audience
+- Developers building full‑stack web, mobile, or SaaS applications
+- AI / ML engineers creating assistants, copilots, or recommendation apps
+- Anyone learning how to build AI‑powered applications with real data
+- Solution architects designing scalable cloud‑native systems
+- Data engineers building analytics and personalization platforms
+- Startups prototyping new AI‑driven or data‑intensive products
+- DevOps teams deploying database‑backed applications on Azure
+- Enterprises building internal tools, knowledge assistants, or automation apps
+- Students and learners exploring modern application or AI development
