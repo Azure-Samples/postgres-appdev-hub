@@ -1,5 +1,5 @@
 [
-    {
+  {
     "title": "Build AI Apps with Azure Database for PostgreSQL",
     "description": "This learning path teaches you how to build Generative AI applications and agents with Azure Database for PostgreSQL, including vector search with pgvector, invoking LLMs using the azure_ai extension and semantic operators, and creating end-to-end RAG solutions. It also covers building intelligent AI agents that integrate seamlessly with your PostgreSQL data.",
     "website": "https://learn.microsoft.com/training/paths/build-ai-apps-azure-database-postgresql/",
@@ -1696,6 +1696,7 @@
     "date": "2025-10-03",
     "tileNumber": 1,
     "learningPathTitle": "Get Started for Free with an Azure Free Account",
-    "learningPathDescription": "Create and use an Azure Database for PostgreSQL flexible server instance for free using an Azure free account!"
+    "learningPathDescription": "Create and use an Azure Database for PostgreSQL flexible server instance for free using an Azure free account!",
+    "priority": "P0"
   }
 ]
